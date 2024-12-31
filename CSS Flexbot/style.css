@@ -1,0 +1,141 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color: burlywood;
+}
+footer {
+    text-align: center;
+    background-color: mintcream;
+    padding: 20px;
+    display: flex;
+    
+    
+}
+footer p {
+    flex: 1;
+    align-self: center;
+    border: 2px black;
+    
+}
+footer a {
+    flex: 2;
+    align-self: center;
+    border: 2px black;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 225, 255);
+}
+a:hover {
+    color: blueviolet;
+    text-decoration: wavy;
+    background-color: chartreuse;
+}
+article {
+    display: grid;
+    flex: 2;
+    align-self:stretch;
+    justify-content: flex-start;
+    border: 5px dashed brown;
+    border-radius: 15px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    align-self: stretch;
+    text-align: left;
+    border: 5px dashed brown;
+    border-radius: 15px;
+    
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-self: stretch;
+    text-align: left;
+    border: 5px dashed brown;
+    border-radius: 15px;
+    
+}
+article img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+header {
+    background-color: darkred;
+    color: thistle;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+nav, section, article, aside {
+    padding: 20px;
+    margin: 10px;
+    background-color:cornsilk;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+} 
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: cornsilk;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex: 1;
+    display: flex;
+    
+}
+nav  ul  li {
+    padding: 10px;
+    display: flex;
+    
+}
+nav  ul  li  a {
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        position: sticky;
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+}
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: mintcream;
+    background-color: darkred
+
+}
+
+nav ul {
+    display: flex;
+}
